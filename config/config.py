@@ -10,6 +10,7 @@ client = MongoClient(uri, server_api=ServerApi('1'),tlsCAFile=certifi.where())
 db = client.ems 
 blogs_collection = db["blogs"]
 telemetries_collection = db["telemetries"]
+projects_collection = db["projects"]
 
 # Send a ping to confirm a successful connection
 try:
